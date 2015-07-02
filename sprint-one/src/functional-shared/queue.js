@@ -7,15 +7,10 @@ var Queue = function(){
   newQueue.head = 1;
   newQueue.tail = 0;
 
-  extend(newQueue, queueMethods);
+  _.extend(newQueue, queueMethods);
   return newQueue;
 };
 
-var extend = function(to, from) {
-  for (var key in from) {
-    to[key] = from[key];
-  }
-};
 
 var queueMethods = {};
 
